@@ -14,6 +14,8 @@ Hello world, this is the first example blog post.
 
 Format is just markdown.
 
+See below
+
 [Writing Blog Syntax](https://chirpy.cotes.page/posts/write-a-new-post/)
 
 ## Example image
