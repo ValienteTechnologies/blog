@@ -20,4 +20,4 @@ See below
 
 ## Example image
 
-![Blog Post Image]({{ '/assets/img/hello-world/blog-post.png' | relative_url }})
+![Blog Post Image]({{'/assets/img/2025-11-23/blog-post.png' | prepend: site.baseurl}})
