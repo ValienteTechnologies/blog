@@ -1,10 +1,10 @@
 theme: jekyll-theme-chirpy
-lang: en
+lang: tr-TR
 timezone: Europe/Istanbul
 title: Valiente Technologies
-tagline: Cybersecurity - IT - Cloud 
+tagline: Siber Güvenlik - IT - Cloud 
 description: >- 
-  Valiente Technologies cybersecurity blog.
+  Valiente Technologies siber güvenlik blog sayfası.
 url: https://valientetechnologies.com/blog
 github:
   username: ValienteTechnologies
@@ -16,7 +16,6 @@ social:
 analytics:
   google:
     id: G-XW6QFKG15Z
-theme_mode: dark
 avatar: https://valientetechnologies.com/assets/valiente.svg
 social_preview_image: https://valientetechnologies.com/assets/valiente.svg
 toc: true
