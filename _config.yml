@@ -1,75 +1,25 @@
-# The Site Configuration
-
-# Import the theme
 theme: jekyll-theme-chirpy
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
 lang: en
 timezone: Europe/Istanbul
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
 title: Valiente Technologies
 tagline: Cybersecurity - IT - Cloud 
-description: >- # used by seo meta and the atom feed
-  Valiente Technologies siber güvenlik blog sayfası.
+description: >- 
+  Valiente Technologies cybersecurity blog.
 url: https://valientetechnologies.com/blog
 github:
   username: ValienteTechnologies
-
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Valiente Technologies
   email: info@valiente.com.tr
   links:
-    - https://github.com/ValienteTechnologies # change to your GitHub homepage
-
-# Site Verification Settings
-webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
-
-# Web Analytics Settings
+    - https://github.com/ValienteTechnologies
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-XW6QFKG15Z
 theme_mode: dark
 avatar: https://valientetechnologies.com/assets/valiente.svg
 social_preview_image: https://valientetechnologies.com/assets/valiente.svg
 toc: true
-
-comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
-  disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
-  giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
 pwa:
   enabled: true # The option for PWA feature (installable)
   cache:
