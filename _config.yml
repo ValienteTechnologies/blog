@@ -5,7 +5,7 @@ title: Valiente Technologies
 tagline: Siber Güvenlik - IT - Cloud 
 description: >- 
   Valiente Technologies siber güvenlik blog sayfası.
-url: https://valientetechnologies.com/blog
+url: https://valientetechnologies.com
 github:
   username: ValienteTechnologies
 social:
@@ -32,7 +32,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "blog"
+baseurl: "/blog"
 
 # ------------ The following options are not recommended to be modified ------------------
 
