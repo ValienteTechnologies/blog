@@ -52,13 +52,11 @@ jobs:
 
       - name: Test site
         run: |
-          BASE_PATH="${{ steps.pages.outputs.base_path }}"
-          SITE_DIR="_site$BASE_PATH"
-          bundle exec htmlproofer "$SITE_DIR" \
-            \-\-root-dir "${{ github.workspace }}/$SITE_DIR" \
-            \-\-disable-external \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/^https:\/\/fonts\.googleapis\.com/,/^https:\/\/fonts\.gstatic\.com/" \
-            \-\-swap-urls "^/blog/:/"
+          bundle exec htmlproofer _site \
+          --disable-external \
+          --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
+          --swap-urls "^/blog/:/"
+
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
