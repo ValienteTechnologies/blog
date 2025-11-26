@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: 2025-11-23 15:10:15 +0300
-categories: [Ahmet Turan KÜÇÜKOĞLU, example]
+categories: [Example, example]
 tags: [example]
 author: tamlata
 ---
