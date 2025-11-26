@@ -1,8 +1,8 @@
 ---
 title: Hello World
 date: 2025-11-23 15:10:15 +0300
-categories: [Example, example]
-tags: [example]
+categories: [Ağ Servisleri, Ftp Pentest]
+tags: [Ftp]
 author: tamlata
 ---
 
