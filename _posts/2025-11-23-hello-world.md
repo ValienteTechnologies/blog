@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: 2025-11-23 15:10:15 +0300
-categories: [Ag Servisleri, Ftp Pentest]
+categories: [Ahmet Turan KÜÇÜKOĞLU, Ftp Pentest]
 tags: [Ftp]
 author: tamlata
 ---
