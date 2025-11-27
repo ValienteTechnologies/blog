@@ -1,12 +1,10 @@
 ---
 title: SIZMA TESTİ (PENETRASYON TESTİ) NEDİR VE NASIL YAPILIR?
-date: 2025-11-23 15:10:15 +0300
+date: 2025-11-27 12:30:00 +0300
 categories: [Ahmet Turan KÜÇÜKOĞLU, Hizmetlerimiz Hakkında]
 tags: [Hizmetlerimiz]
 author: tamlata
 ---
-
-# **SIZMA TESTİ (PENETRASYON TESTİ) NEDİR VE NASIL YAPILIR?**
 
 Sızma testi, veya yaygın adıyla **Pentest hizmeti**, bilişim sistemlerindeki **sorun**, **hata** ve **zafiyetleri ortaya çıkararak** herhangi bir güvenlik zafiyetini önlemek ve sistemleri daha güvenli hale getirmek amacı ile alanında uzman kişiler tarafından gerçekleştirilen özel bir **siber güvenlik danışmanlık hizmetidir**.
 
