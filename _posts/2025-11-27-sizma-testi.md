@@ -1,5 +1,5 @@
 ---
-title: Sızma Testi (Penetrasyon Testi̇) Nedi̇r Ve Nasıl Yapılır?
+title: Sızma Testi (Penetrasyon Testi) Nedir Ve Nasıl Yapılır?
 date: 2025-11-27 12:30:00 +0300
 categories: [Hizmetlerimiz, Sızma Testi]
 tags: [Hizmetlerimiz, Pentest, Sızma Testi]
@@ -17,13 +17,13 @@ Her bir varlık türüne göre önceden belirlenen senaryolar dahilinde uygulana
 
 ## **HİZMET BİLEŞENLERİ VE TEMEL TEST METODOLOJİLERİ**
 
-Sızma testlerinin başarısı, uygulanan **metodolojinin doğruluğuna** bağlıdır. **Black Box (kara kutu), White Box (beyaz kutu) ve Grey Box (gri kutu)** yaklaşımları, sistemlerin farklı açılardan test edilmesini sağlar. **OWASP** ve **NIST** gibi uluslararası standartlara uygun olarak, testlerin kapsamı belirlenir. Bu yaklaşımlar, hem **tehdit modellemesi** yaparak zafiyetleri önceden görmeyi hem de **saldırı simülasyonları** ile savunmanın zayıf noktalarını tespit etmeyi sağlar.
+Sızma testlerinin başarısı, uygulanan **metodolojinin doğruluğuna** bağlıdır. **Black Box (kara kutu), White Box (beyaz kutu) ve Grey Box (gri kutu)** yaklaşımları, sistemlerin farklı açılardan test edilmesini sağlar. **OWASP** ve **NiST** gibi uluslararası standartlara uygun olarak, testlerin kapsamı belirlenir. Bu yaklaşımlar, hem **tehdit modellemesi** yaparak zafiyetleri önceden görmeyi hem de **saldırı simülasyonları** ile savunmanın zayıf noktalarını tespit etmeyi sağlar.
 
-- **Black Box (Kara Kutu) Yaklaşımı:** Test uzmanına hedef sistem hakkında herhangi bir bilgi verilmez. Amaç, dışarıdan saldırgan perspektifiyle hareket ederek, kurumun dış yüzey (internet erişimi olan varlıklar) güvenlik seviyesini ölçmektir. DNS, IP blokları, açık portlar, uygulama endpoint’leri gibi unsurlar gerçek bir saldırgan gibi keşfedilir ve istismar edilmeye çalışılır.
+- **Black Box (Kara Kutu) Yaklaşımı:** Test uzmanına hedef sistem hakkında herhangi bir bilgi verilmez. Amaç, dışarıdan saldırgan perspektifiyle hareket ederek, kurumun dış yüzey (internet erişimi olan varlıklar) güvenlik seviyesini ölçmektir. DNS, iP blokları, açık portlar, uygulama endpoint’leri gibi unsurlar gerçek bir saldırgan gibi keşfedilir ve istismar edilmeye çalışılır.
   
 - **White Box (Beyaz Kutu) Yaklaşımı:** Test uzmanına tüm iç yapıya dair kapsamlı bilgi verilir (ağ diyagramları, kaynak kod, kullanıcı erişimleri, yapılandırmalar vb.). Bu yaklaşım, iç ağda gerçekleşebilecek saldırıların etkisini ölçmek, servis mantığı ve kod güvenliğini analiz etmek ve en kritik zafiyetleri en hızlı şekilde açığa çıkarmak amacıyla uygulanır.
 
-- **Grey Box (Gri Kutu) Yaklaşımı:** Test uzmanına sınırlı fakat kontrollü erişim veya bilgi verilir. Örneğin kullanıcı hesabı, API token veya belirli erişim seviyeleri sağlanabilir. Amaç, hem dış hem de iç tehdit aktörlerinin gerçekçi şekilde simüle edilmesi, yetki yükseltme (privilege escalation) senaryolarının ve yatay/dikey erişim suiistimallerinin değerlendirilmesidir.
+- **Grey Box (Gri Kutu) Yaklaşımı:** Test uzmanına sınırlı fakat kontrollü erişim veya bilgi verilir. Örneğin kullanıcı hesabı, APi token veya belirli erişim seviyeleri sağlanabilir. Amaç, hem dış hem de iç tehdit aktörlerinin gerçekçi şekilde simüle edilmesi, yetki yükseltme (privilege escalation) senaryolarının ve yatay/dikey erişim suiistimallerinin değerlendirilmesidir.
 
 ---
 
@@ -50,7 +50,7 @@ Kapsam dahilinde hızlı ve odaklı kontroller yapılır:
 - **Ağ segmentasyonu** ve **VLAN izolasyonunun** doğrulanması
 - **Güvenlik duvarı (Firewall) kurallarının** uygunluğu ve **gereksiz erişimlerin tespiti**
 - **VPN ve uzak erişim yöntemlerinin güvenliği** (MFA, erişim kısıtlamaları vb.)
-- **IDS/IPS yapılandırmalarının** etkinlik kontrolleri
+- **iDS/iPS yapılandırmalarının** etkinlik kontrolleri
 - **DNS güvenliği** ve **zone transfer açıklıklarının analizi**
 - **Ağ servislerinin** (SMB, RDP, SSH, FTP, LDAP vb.) **port, yetki ve erişim seviyelerinin değerlendirilmesi**
 - **Sertifika yönetimi** ve **TLS sürüm kontrolleri** (zayıf/protokol dışı sürümler)
@@ -75,11 +75,11 @@ Her bir zafiyet için **teknik çözüm önerileri** sunulur ve **iyileştirme y
 
 Periyodik sızma testleri ve **otomatik zafiyet taramalarıyla**, yeni ortaya çıkan tehditlere karşı proaktif savunma sağlanır.
 
-**PCI DSS, GDPR, ISO 27001, BDDK** gibi standartlara uyumluluk denetimleri gerçekleştirilerek, **yasal düzenlemelere tam uyum** garanti altına alınır.
+**PCi DSS, GDPR, iSO 27001, BDDK** gibi standartlara uyumluluk denetimleri gerçekleştirilerek, **yasal düzenlemelere tam uyum** garanti altına alınır.
 
 ---
 
-## **SIK SORULAN SORULAR (SSS)**
+## **SiK SORULAN SORULAR (SSS)**
 
 **Sızma testi nedir?**  
 Sızma testi, bir organizasyonun ağ, uygulama veya sistem güvenliğini değerlendirmek amacıyla gerçekleştirilen **kontrollü siber saldırılardır**. Testler ile, sistemdeki güvenlik zayıflıklarını belirlemek için saldırganların yöntemleri simüle edilir.
@@ -105,7 +105,7 @@ araçları ve tekniklerinde yetkinliğe sahiptir.
 
 ---
 
-## **13 ADIMDA KAPSAMLI SIZMA TESTİ EVRELERİ**
+## **13 ADiMDA KAPSAMLi SiZMA TESTİ EVRELERİ**
 
 1. **Zafiyet Seviyelendirmesi**  
 2. **Bilgi Toplama**  
@@ -123,9 +123,9 @@ araçları ve tekniklerinde yetkinliğe sahiptir.
 
 ---
 
-## **KULLANILAN METODOLOJİLER VE ULUSLARARASI STANDARTLAR**
+## **KULLANiLAN METODOLOJİLER VE ULUSLARARASi STANDARTLAR**
 
-Sızma testleri, güvenlik zafiyetlerini ortaya çıkarmak için hem dışarıdan (**Internet**) hem de içeriden (**Internal**) sızma testleri uygulanarak, uluslararası **metodolojik yaklaşımlar** temel alınarak gerçekleştirilir.
+Sızma testleri, güvenlik zafiyetlerini ortaya çıkarmak için hem dışarıdan (**internet**) hem de içeriden (**internal**) sızma testleri uygulanarak, uluslararası **metodolojik yaklaşımlar** temel alınarak gerçekleştirilir.
 
 Testler, hedef sistemin aktif, dinamik ve statik analizini içeren şu güvenlik normlarına, metodolojilerine ve standartlarına dayanır:
 
@@ -142,32 +142,32 @@ konusunda farkındalık yaratmaktır.
 uzmanları için uyarlanabilir kılavuzlar içeren sızma testine yönelik bilimsel bir
 yaklaşıma dayanır.
 
-**NIST**  : Testin doğruluğunu artırmaya yardımcı olmak için test ekibine çok özel sızma
+**NiST**  : Testin doğruluğunu artırmaya yardımcı olmak için test ekibine çok özel sızma
 testi yönergeleri sunar. Çeşitli sektörlerdeki hem büyük hem de küçük şirketler, sızma
 testi için bu çerçeveden yararlanabilir.
 
-**ISSAF (Information Applications Security Assessment Framework)** : Open Information Systems Security Group tarafından desteklenen bir
+**iSSAF (information Applications Security Assessment Framework)** : Open information Systems Security Group tarafından desteklenen bir
 pentesting kılavuzudur. Bu metodoloji artık güncellenmemektedir,bununla birlikte,
 kapsamlı doğası nedeniyle hala kullanılmaktadır.
 
 ---
 
-## **SIZMA TESTİ GEREKEN KRİTİK SEKTÖRLER**
+## **SiZMA TESTİ GEREKEN KRİTİK SEKTÖRLER**
 
 Hassas verileri işleyen veya siber saldırı riski yüksek olan şirketlerin (Örn: **Sağlık kuruluşları, kamu kurumları, finans kurumları, e-ticaret işletmeleri**), katı uyumluluk gereksinimleri nedeniyle düzenli olarak sızma testi yaptırması önerilmektedir.
 
 Sızma testi, şirketinizin belirli **yerel ve küresel güvenlik uyumluluklarını** sağlamak amacıyla çeşitli endüstrilerde zorunludur. Penetrasyon testi gerektiren başlıca endüstri standartları şunlardır:
 
-* **HIPAA (Sağlık kuruluşları)** 
-* **PCI-DSS, TSE (Ödeme işleyen şirketler)**  
-* **RBI-ISMS, BDDK, SPK, TSE (Bankalar ve bankacılık dışı finans kuruluşları)**  
+* **HiPAA (Sağlık kuruluşları)** 
+* **PCi-DSS, TSE (Ödeme işleyen şirketler)**  
+* **RBi-iSMS, BDDK, SPK, TSE (Bankalar ve bankacılık dışı finans kuruluşları)**  
 * **SGT, TSE (Sivil Havacılık şirketleri)**  
 * **SOC 2 (Hizmet kuruluşları)**  
-* **ISO 27001 (Bilgi güvenliği etrafında iş yapmaya istekli herhangi bir kuruluş)**
+* **iSO 27001 (Bilgi güvenliği etrafında iş yapmaya istekli herhangi bir kuruluş)**
 
 ---
 
-## **TEST SONRASI ALINMASI GEREKEN ÖNLEMLER**
+## **TEST SONRASi ALiNMASi GEREKEN ÖNLEMLER**
 
 Penetrasyon testi raporunu aldıktan sonra, güvenlik açıklarını **önceliklendirmek**, **düzeltme planı oluşturmak** ve gerekli güvenlik önlemlerini hızla devreye sokmak kritik öneme sahiptir:
 
