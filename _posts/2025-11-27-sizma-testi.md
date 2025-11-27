@@ -1,5 +1,5 @@
 ---
-title: Sızma Testi̇ (Penetrasyon Testi̇) Nedi̇r Ve Nasıl Yapılır?
+title: Sızma Testi (Penetrasyon Testi̇) Nedi̇r Ve Nasıl Yapılır?
 date: 2025-11-27 12:30:00 +0300
 categories: [Hizmetlerimiz, Sızma Testi]
 tags: [Hizmetlerimiz, Pentest, Sızma Testi]
