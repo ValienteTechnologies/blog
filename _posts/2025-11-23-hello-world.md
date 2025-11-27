@@ -1,8 +1,8 @@
 ---
 title: Hello World
 date: 2025-11-23 15:10:15 +0300
-categories: [Ahmet Turan KÜÇÜKOĞLU, Ftp Pentest]
-tags: [Ftp]
+categories: [Example]
+tags: [Example]
 author: tamlata
 ---
 
