@@ -23,18 +23,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  cleanup: # https://stackoverflow.com/a/76998444/13883950
-    runs-on: ubuntu-latest
-    permissions: write-all
-
-    steps:
-      - name: 🗑 Delete deployment
-        uses: strumwolf/delete-deployment-environment@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          environment: github-pages
-          onlyRemoveDeployments: true
-
   build:
     runs-on: ubuntu-latest
 
@@ -73,12 +61,24 @@ jobs:
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
 
+  cleanup: # https://stackoverflow.com/a/76998444/13883950
+    runs-on: ubuntu-latest
+    permissions: write-all
+    needs: build
+    steps:
+      - name: 🗑 Delete deployment
+        uses: strumwolf/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: github-pages
+          onlyRemoveDeployments: true
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: cleanup
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
