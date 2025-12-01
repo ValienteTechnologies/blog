@@ -14,7 +14,6 @@ Her bir varlık türüne göre önceden belirlenen senaryolar dahilinde uygulana
 
 ---
 
-
 ## **HİZMET BİLEŞENLERİ VE TEMEL TEST METODOLOJİLERİ**
 
 Sızma testlerinin başarısı, uygulanan **metodolojinin doğruluğuna** bağlıdır. **Black Box (kara kutu), White Box (beyaz kutu) ve Grey Box (gri kutu)** yaklaşımları, sistemlerin farklı açılardan test edilmesini sağlar. **OWASP** ve **NIST** gibi uluslararası standartlara uygun olarak, testlerin kapsamı belirlenir. Bu yaklaşımlar, hem **tehdit modellemesi** yaparak zafiyetleri önceden görmeyi hem de **saldırı simülasyonları** ile savunmanın zayıf noktalarını tespit etmeyi sağlar.
