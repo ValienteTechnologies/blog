@@ -1,6 +1,6 @@
 ---
 title: 'Kritik Zafiyet Analizi: CVE-2025-55182 (REACT2SHELL)'
-date: 2025-12-9 2:00:00 +0300
+date: 2025-12-09 2:00:00 +0300
 categories: [Kritik Zafiyetler, CVE-2025-55182 (REACT2SHELL)]
 tags: [Kritik Zafiyetler, React, CVE-2025-55182, REACT2SHELL]
 author: tamlata
@@ -127,9 +127,6 @@ Uygulama ve web sunucusu günlüklerinin şüpheli faaliyetler açısından kont
 
 ---
 
-
-
-
 ## 5. CVE-2025-55182 (React2Shell) PROOF OF CONCEPT
 
 Bu bölüm, zafiyetin test ortamında (Proof-of-Concept) nasıl istismar edildiğini görsel adımlarla göstermektedir.
@@ -143,9 +140,9 @@ Bu bölüm, zafiyetin test ortamında (Proof-of-Concept) nasıl istismar edildi�
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 1** | `https://github.com/msanft/CVE-2025-55182` reposunu klonluyoruz. |
-| **[ 1 ]** | ![](/assets/img/2025-12-9/1.png) |
+| **[ 1 ]** | ![](/assets/img/2025-12-09/1.png) |
 | **Görsel 2** | `test-server` klasörüne girip `npm run dev` komutu ile React projemizi çalıştırıyoruz. Next.js 16.0.6 (App Router kullanan etkilenen sürüm) yerel ağda dinlemeye başlıyor. |
-| **[ 2 ]** | ![](/assets/img/2025-12-9/2.png) |
+| **[ 2 ]** | ![](/assets/img/2025-12-09/2.png) |
 
 ### Adım 2: Zafiyetli Uygulamanın Doğrulanması
 
@@ -154,7 +151,7 @@ Zafiyetli sunucu, yerel ağda veya `localhost:3000` portunda erişilebilir hale 
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 3** | Gördüğümüz gibi `localhost:3000` portunda proje çalışıyor. Tarayıcıda uygulamanın arayüzünü görebiliriz. |
-| **[ 3 ]** | ![](/assets/img/2025-12-9/3.png) |
+| **[ 3 ]** | ![](/assets/img/2025-12-09/3.png) |
 
 ### Adım 3: PoC Scriptinin İncelenmesi ve Kötü Amaçlı Yükün Tanımlanması
 
@@ -163,7 +160,7 @@ Zafiyetli sunucu, yerel ağda veya `localhost:3000` portunda erişilebilir hale 
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 4** | `poc.py` scriptini Sublime Text ile açtığımızda scripti okuyabilir, hatta uzaktan çalıştırılacak kodu değiştirebiliriz. Ben burada `uname -a` komutunu kullandım. Script, RCE için kritik olan `prefix` ve `formData` alanlarını görüleceği üzere özel olarak yapılandırmıştır. |
-| **[ 4 ]** | ![](/assets/img/2025-12-9/5.png) |
+| **[ 4 ]** | ![](/assets/img/2025-12-09/5.png) |
 
 ### Adım 4: Zafiyetin Başarılı Tetiklenmesi (whoami Komutu)
 
@@ -172,7 +169,7 @@ Zafiyetli sunucu, yerel ağda veya `localhost:3000` portunda erişilebilir hale 
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 5** | `poc.py` scriptini çalıştırdığımızda ise RCE ile serverda komut çalıştırabiliyoruz. Burada varsayılan komut çalışmıştır ve kullanıcı (UID/GID) bilgileri dönmüştür. |
-| **[ 5 ]** | ![](/assets/img/2025-12-9/4.png) |
+| **[ 5 ]** | ![](/assets/img/2025-12-09/4.png) |
 
 ### Adım 5: Uzaktan Komut Yürütme Kanıtı (uname -a Komutu)
 
@@ -181,7 +178,7 @@ Scriptte tanımlanan `uname -a` komutu çalıştırılarak, sunucunun işletim s
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 6** | Burada tekrar `poc.py | lolcat` komutunu çalıştırınca `uname -a` komutunun serverda çalıştığını ve Linux OS detaylarını içeren yanıtı görebiliyoruz. |
-| **[ 6 ]** | ![](/assets/img/2025-12-9/6.png) |
+| **[ 6 ]** | ![](/assets/img/2025-12-09/6.png) |
 
 ### Adım 6: Sunucu Tarafı Kanıtı (Log Analizi)
 
@@ -190,7 +187,7 @@ Saldırının başarısı, yalnızca istemci yanıtıyla değil, aynı zamanda e
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 7** | Server loglarından, RCE sonucu yürütülen `uname -a` komutunun çıktısı olan Linux OS bilgisinin (`Linux huawei 5.15.0-163-generic...`) bir hata digest'i içinde göründüğünü tespit edebiliriz. Bu, uygulamanın kod yürütme esnasında yanıt oluşturmaya çalıştığını ve bunu doğrulayan kritik bir sunucu tarafı göstergesidir. |
-| **[ 7 ]** | ![](/assets/img/2025-12-9/7.png) |
+| **[ 7 ]** | ![](/assets/img/2025-12-09/7.png) |
 
 ### Adım 7: Script ile zafiyet keşfi 
 
@@ -199,7 +196,7 @@ https://github.com/fatguru/CVE-2025-55182-scanner Scripti ile hedef makinada tar
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 8** | İlgili scripti çalıştırarak localhost:3000 'i taratıyoruz, Eğer makina zafiyetli ise `EXPOSED` çıktısını göreceksiniz.  |
-| **[ 8 ]** | ![](/assets/img/2025-12-9/8.png) |
+| **[ 8 ]** | ![](/assets/img/2025-12-09/8.png) |
 
 
 **Özetleyici Analoji:**
