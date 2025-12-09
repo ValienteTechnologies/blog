@@ -77,6 +77,11 @@ Cyber Kill Chain'in son halkasıdır ve saldırganın nihai amaçlarının uygul
 
 Hedef sisteme saldırganın motivasyonuna göre zarar verilir. Bu; veri sızıntısı, fidye yazılımı saldırıları (Ransomware) veya sistemi çalıştırılamaz hale getirilmesi gibi kötü senaryolar olabilir.
 
+---
+
+
+Bu yazıda *"Computer and Network Security Essentials - Kevin Daimi"* kaynağından yararlanılmıştır.
+
 
 
 
