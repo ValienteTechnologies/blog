@@ -6,7 +6,7 @@ tags: [Hizmetlerimiz, Siber Güvenlik Temelleri]
 author: rabia
 ---
 
-![Image](/assets/img/2025-12-01/cyber_kill_chain_1.png)
+![Image](/assets/img/2025-12-09/cyber_kill_chain_1.png)
 
 ## Giriş
 Hiçbir başarı alelade gelişmez, arkada planlı birçok adım vardır. Her alanda olduğu gibi siber güvenliğin ofansif ve defansif cevaplarının arkasında adım adım planlanan ve hayata geçirilen metodolojiler vardır.
@@ -20,7 +20,7 @@ Bu savunma konseptinin siber dünyaya yansıtılması ise **Lockheed Martin** ad
 ## İşleyiş Şekli
 Giriş kısmında bahsettiğimiz gibi, hiçbir atak ve atağa verilen cevap alelade değildir, planlı onca basamaktan geçer. Siber ölüm zinciri de aynı şekilde akıllıca planlanması gerek 7 basamaktan oluşur. Şimdi bu 7 basamağa bir göz atalım.
 
-![Image](/assets/img/2025-12-01/cyber-kill-chain_2.png)
+![Image](/assets/img/2025-12-09/cyber-kill-chain_2.png)
 
 ## Keşif (Reconnaissance)
 Yedi aşamalı metodolojinin ilk aşaması olmakla beraber hedef hakkında açık ve bilgi toplanmasının yapıldığı kısımdır. Hedef olarak görülen bir insan ya da kuruluşun hakkında bir zafiyet analizi yapmak için önemli miktarda araştırma yapılıp zaman ayırılması gerekmektedir. 
