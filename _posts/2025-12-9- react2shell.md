@@ -145,9 +145,9 @@ Bu bölüm, zafiyetin test ortamında (Proof-of-Concept) nasıl istismar edildi�
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 1** | `https://github.com/msanft/CVE-2025-55182` reposunu klonluyoruz. |
- ![](/assets/img/2025-12-9/1.png) |
+| **[ 1 ]** | ![](/assets/img/2025-12-9/1.png) |
 | **Görsel 2** | `test-server` klasörüne girip `npm run dev` komutu ile React projemizi çalıştırıyoruz. Next.js 16.0.6 (App Router kullanan etkilenen sürüm) yerel ağda dinlemeye başlıyor. |
-| **[RESİM 2 YERİ]** | ![](/assets/img/2025-12-9/2.png) |
+| **[ 2 ]** | ![](/assets/img/2025-12-9/2.png) |
 
 ### Adım 2: Zafiyetli Uygulamanın Doğrulanması
 
@@ -156,7 +156,7 @@ Zafiyetli sunucu, yerel ağda veya `localhost:3000` portunda erişilebilir hale 
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 3** | Gördüğümüz gibi `localhost:3000` portunda proje çalışıyor. Tarayıcıda uygulamanın arayüzünü görebiliriz. |
-| **[RESİM 3 YERİ]** | ![](/assets/img/2025-12-9/3.png) |
+| **[ 3 ]** | ![](/assets/img/2025-12-9/3.png) |
 
 ### Adım 3: PoC Scriptinin İncelenmesi ve Kötü Amaçlı Yükün Tanımlanması
 
@@ -165,7 +165,7 @@ Zafiyetli sunucu, yerel ağda veya `localhost:3000` portunda erişilebilir hale 
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 4** | `poc.py` scriptini Sublime Text ile açtığımızda scripti okuyabilir, hatta uzaktan çalıştırılacak kodu değiştirebiliriz. Ben burada `uname -a` komutunu kullandım. Script, RCE için kritik olan `prefix` ve `formData` alanlarını görüleceği üzere özel olarak yapılandırmıştır. |
-| **[RESİM 4 YERİ]** | ![](/assets/img/2025-12-9/5.png) |
+| **[ 4 ]** | ![](/assets/img/2025-12-9/5.png) |
 
 ### Adım 4: Zafiyetin Başarılı Tetiklenmesi (whoami Komutu)
 
@@ -174,7 +174,7 @@ Zafiyetli sunucu, yerel ağda veya `localhost:3000` portunda erişilebilir hale 
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 5** | `poc.py` scriptini çalıştırdığımızda ise RCE ile serverda komut çalıştırabiliyoruz. Burada varsayılan komut çalışmıştır ve kullanıcı (UID/GID) bilgileri dönmüştür. |
-| **[RESİM 5 YERİ]** | ![](/assets/img/2025-12-9/4.png) |
+| **[ 5 ]** | ![](/assets/img/2025-12-9/4.png) |
 
 ### Adım 5: Uzaktan Komut Yürütme Kanıtı (uname -a Komutu)
 
@@ -183,7 +183,7 @@ Scriptte tanımlanan `uname -a` komutu çalıştırılarak, sunucunun işletim s
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 6** | Burada tekrar `poc.py | lolcat` komutunu çalıştırınca `uname -a` komutunun serverda çalıştığını ve Linux OS detaylarını içeren yanıtı görebiliyoruz. |
-| **[RESİM 6 YERİ]** | ![](/assets/img/2025-12-9/6.png) |
+| **[ 6 ]** | ![](/assets/img/2025-12-9/6.png) |
 
 ### Adım 6: Sunucu Tarafı Kanıtı (Log Analizi)
 
@@ -192,7 +192,7 @@ Saldırının başarısı, yalnızca istemci yanıtıyla değil, aynı zamanda e
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 7** | Server loglarından, RCE sonucu yürütülen `uname -a` komutunun çıktısı olan Linux OS bilgisinin (`Linux huawei 5.15.0-163-generic...`) bir hata digest'i içinde göründüğünü tespit edebiliriz. Bu, uygulamanın kod yürütme esnasında yanıt oluşturmaya çalıştığını ve bunu doğrulayan kritik bir sunucu tarafı göstergesidir. |
-| **[RESİM 7 YERİ]** | ![](/assets/img/2025-12-9/7.png) |
+| **[ 7 ]** | ![](/assets/img/2025-12-9/7.png) |
 
 ### Adım 7: Script ile zafiyet keşfi 
 
@@ -200,9 +200,14 @@ https://github.com/fatguru/CVE-2025-55182-scanner Scripti ile hedef makinada tar
 
 | Görsel No | Açıklama |
 | :--- | :--- |
-| **Görsel 7** | İlgili scripti çalıştırarak localhost:3000 'i taratıyoruz, Eğer makina zafiyetli ise `EXPOSED` çıktısını göreceksiniz.  |
-| **[RESİM 7 YERİ]** | ![](/assets/img/2025-12-9/8.png) |
+| **Görsel 8** | İlgili scripti çalıştırarak localhost:3000 'i taratıyoruz, Eğer makina zafiyetli ise `EXPOSED` çıktısını göreceksiniz.  |
+| **[ 8 ]** | ![](/assets/img/2025-12-9/8.png) |
 
+
+**Özetleyici Analoji:**
+
+Bu zafiyet, bir kargo şirketinin (React Flight Protocol), taşıdığı bir paketin (Chunk) içeriği sayesinde, kendi iç prosedürlerini (Chunk.prototype.then) manipüle etmesini sağlamasına benzetilebilir. Bu manipülasyon sonucunda, sistem kendi kendini çağırır ve paket içindeki gizli bir talimatı (malicious code) kullanarak, kritik bir sistem aracını (`Function` constructor) çalıştırmasını emreder. Saldırının bu kadar tehlikeli olmasının temel nedeni, WAF'ların geleneksel imzalarla tespit edemeyeceği **karmaşık kodlama yöntemleri** ve **büyük veri yükleri** kullanılarak kolayca atlatılabilmesidir. Bu durum, yalnızca temel sistem mantığının yamalanmasıyla (yani uygulamanın güncellenmesiyle) tamamen çözülebilir.
+*   **Kritik Detay:** Uygulamalar, sunucu işlevlerini (Server Functions) açıkça kullanmasalar bile, React Server Components’ı destekledikleri sürece bu zafiyete karşı savunmasızdır.
 
 ### KAYNAKLAR
 
@@ -224,8 +229,5 @@ https://github.com/fatguru/CVE-2025-55182-scanner Scripti ile hedef makinada tar
 
 ---
 
-**Özetleyici Analoji:**
 
-Bu zafiyet, bir kargo şirketinin (React Flight Protocol), taşıdığı bir paketin (Chunk) içeriği sayesinde, kendi iç prosedürlerini (Chunk.prototype.then) manipüle etmesini sağlamasına benzetilebilir. Bu manipülasyon sonucunda, sistem kendi kendini çağırır ve paket içindeki gizli bir talimatı (malicious code) kullanarak, kritik bir sistem aracını (`Function` constructor) çalıştırmasını emreder. Saldırının bu kadar tehlikeli olmasının temel nedeni, WAF'ların geleneksel imzalarla tespit edemeyeceği **karmaşık kodlama yöntemleri** ve **büyük veri yükleri** kullanılarak kolayca atlatılabilmesidir. Bu durum, yalnızca temel sistem mantığının yamalanmasıyla (yani uygulamanın güncellenmesiyle) tamamen çözülebilir.
-*   **Kritik Detay:** Uygulamalar, sunucu işlevlerini (Server Functions) açıkça kullanmasalar bile, React Server Components’ı destekledikleri sürece bu zafiyete karşı savunmasızdır.
 ```
