@@ -201,7 +201,7 @@ https://github.com/fatguru/CVE-2025-55182-scanner Scripti ile hedef makinada tar
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 7** | İlgili scripti çalıştırarak localhost:3000 'i taratıyoruz, Eğer makina zafiyetli ise `EXPOSED` çıktısını göreceksiniz.  |
-| **[RESİM 7 YERİ]** | ![](7.png) |
+| **[RESİM 7 YERİ]** | ![](/assets/img/2025-12-9/8.png) |
 
 
 ### KAYNAKLAR
