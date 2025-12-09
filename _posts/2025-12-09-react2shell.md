@@ -1,12 +1,10 @@
 ---
-title: Kritik Zafiyet Analizi : CVE-2025-55182 (REACT2SHELL)
+title: 'Kritik Zafiyet Analizi: CVE-2025-55182 (REACT2SHELL)'
 date: 2025-12-9 2:00:00 +0300
 categories: [Kritik Zafiyetler, CVE-2025-55182 (REACT2SHELL)]
-tags: [Kritik Zafiyetler, React,CVE-2025-55182,REACT2SHELL ]
+tags: [Kritik Zafiyetler, React, CVE-2025-55182, REACT2SHELL]
 author: tamlata
 ---
-
-# KRİTİK ZAFİYET ANALİZİ: CVE-2025-55182 (REACT2SHELL)
 
 Bu makale, React Server Components (RSC) altyapısında keşfedilen ve **maksimum ciddiyet** seviyesine sahip olan, kimlik doğrulaması gerektirmeyen **Uzaktan Kod Yürütme (RCE)** açığı **CVE-2025-55182**’nin teknik detaylarını ve savunma yöntemlerini kapsamlı olarak incelemektedir. Güvenlik araştırmacıları bu zafiyete **React2Shell** adını vermiştir.
 
