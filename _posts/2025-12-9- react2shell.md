@@ -145,7 +145,7 @@ Bu bölüm, zafiyetin test ortamında (Proof-of-Concept) nasıl istismar edildi�
 | Görsel No | Açıklama |
 | :--- | :--- |
 | **Görsel 1** | `https://github.com/msanft/CVE-2025-55182` reposunu klonluyoruz. |
-| **[RESİM 1 YERİ]** | ![](/assets/img/2025-12-9/1.png) |
+ ![](/assets/img/2025-12-9/1.png) |
 | **Görsel 2** | `test-server` klasörüne girip `npm run dev` komutu ile React projemizi çalıştırıyoruz. Next.js 16.0.6 (App Router kullanan etkilenen sürüm) yerel ağda dinlemeye başlıyor. |
 | **[RESİM 2 YERİ]** | ![](/assets/img/2025-12-9/2.png) |
 
@@ -164,8 +164,8 @@ Zafiyetli sunucu, yerel ağda veya `localhost:3000` portunda erişilebilir hale 
 
 | Görsel No | Açıklama |
 | :--- | :--- |
-| **Görsel 5** | `poc.py` scriptini Sublime Text ile açtığımızda scripti okuyabilir, hatta uzaktan çalıştırılacak kodu değiştirebiliriz. Ben burada `uname -a` komutunu kullandım. Script, RCE için kritik olan `prefix` ve `formData` alanlarını görüleceği üzere özel olarak yapılandırmıştır. |
-| **[RESİM 5 YERİ]** | ![](/assets/img/2025-12-9/5.png) |
+| **Görsel 4** | `poc.py` scriptini Sublime Text ile açtığımızda scripti okuyabilir, hatta uzaktan çalıştırılacak kodu değiştirebiliriz. Ben burada `uname -a` komutunu kullandım. Script, RCE için kritik olan `prefix` ve `formData` alanlarını görüleceği üzere özel olarak yapılandırmıştır. |
+| **[RESİM 4 YERİ]** | ![](/assets/img/2025-12-9/5.png) |
 
 ### Adım 4: Zafiyetin Başarılı Tetiklenmesi (whoami Komutu)
 
@@ -173,8 +173,8 @@ Zafiyetli sunucu, yerel ağda veya `localhost:3000` portunda erişilebilir hale 
 
 | Görsel No | Açıklama |
 | :--- | :--- |
-| **Görsel 4** | `poc.py` scriptini çalıştırdığımızda ise RCE ile serverda komut çalıştırabiliyoruz. Burada varsayılan komut çalışmıştır ve kullanıcı (UID/GID) bilgileri dönmüştür. |
-| **[RESİM 4 YERİ]** | ![](/assets/img/2025-12-9/4.png) |
+| **Görsel 5** | `poc.py` scriptini çalıştırdığımızda ise RCE ile serverda komut çalıştırabiliyoruz. Burada varsayılan komut çalışmıştır ve kullanıcı (UID/GID) bilgileri dönmüştür. |
+| **[RESİM 5 YERİ]** | ![](/assets/img/2025-12-9/4.png) |
 
 ### Adım 5: Uzaktan Komut Yürütme Kanıtı (uname -a Komutu)
 
