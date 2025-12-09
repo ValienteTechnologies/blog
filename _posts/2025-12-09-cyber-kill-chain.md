@@ -1,8 +1,8 @@
 ---
 title: Cyber Kill Chain 
 date: 2025-12-09 20:30:00 +0300
-categories: [Hizmetlerimiz, Sızma Testi]
-tags: [Hizmetlerimiz, Siber Güvenlik Temelleri]
+categories: [Siber Güvenlik Temelleri, Sızma Testi]
+tags: [Siber Ölüm Zinciri, Sızma Testi, Siber Güvenlik Metodolojisi, OSINT, Keşif, Siber Güvenlik Temelleri]
 author: rabia
 ---
 
