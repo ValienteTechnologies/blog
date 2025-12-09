@@ -1,8 +1,8 @@
 ---
 title: Cyber Kill Chain 
-date: 2025-12-09 12:30:00 +0300
+date: 2025-12-09 20:30:00 +0300
 categories: [Hizmetlerimiz, Sızma Testi]
-tags: [Hizmetlerimiz, Cyber Kill Chain, Sızma Testi]
+tags: [Hizmetlerimiz, Siber Güvenlik Temelleri]
 author: rabiacelikli
 ---
 
