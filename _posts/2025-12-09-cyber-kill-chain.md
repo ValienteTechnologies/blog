@@ -75,7 +75,7 @@ Bu aşama, savunma ekipleri için saldırıyı engellemek adına son fırsattır
 ## Hedef Odaklı Eylemler (Actions on Objectives)
 Cyber Kill Chain'in son halkasıdır ve saldırganın nihai amaçlarının uygulanmaya konulduğu noktadır. Zararlı yazılım hedef sisteme yerleşmişse, artık planlanan görevleri yerine getirmeye başlar. Bunu ya C2 sunucusundan gelen komutlarla ya da kendi kodunda tanımlı otomatik işlevlerle gerçekleştirir. Artık bu kısımda saldırganın malesef başarılı olduğundan bahsedebiliriz.
 
-Hedef sisteme saldırganın motivasyonuna göre zarar verilir. Bu; veri sızıntısı, fidye yazılımı saldırıları (Ransomware) veya sistemi çalıştırılamaz hale getirilmesi gibi kötü senaryolar olabilir.
+Hedef sisteme saldırganın motivasyonuna göre zarar verilir. Bu; veri sızıntısı, fidye yazılımı saldırıları (Ransomware) veya sistemin çalıştırılamaz hale getirilmesi gibi kötü senaryolar olabilir.
 
 ---
 
