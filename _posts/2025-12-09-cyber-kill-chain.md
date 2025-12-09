@@ -20,7 +20,7 @@ Bu savunma konseptinin siber dünyaya yansıtılması ise **Lockheed Martin** ad
 ## İşleyiş Şekli
 Giriş kısmında bahsettiğimiz gibi, hiçbir atak ve atağa verilen cevap alelade değildir, planlı onca basamaktan geçer. Siber ölüm zinciri de aynı şekilde akıllıca planlanması gerek 7 basamaktan oluşur. Şimdi bu 7 basamağa bir göz atalım.
 
-![Image](/assets/img/2025-12-09/cyber-kill-chain_2.png)
+![Image](/assets/img/2025-12-09/cyber_kill_chain_2.png)
 
 ## Keşif (Reconnaissance)
 Yedi aşamalı metodolojinin ilk aşaması olmakla beraber hedef hakkında açık ve bilgi toplanmasının yapıldığı kısımdır. Hedef olarak görülen bir insan ya da kuruluşun hakkında bir zafiyet analizi yapmak için önemli miktarda araştırma yapılıp zaman ayırılması gerekmektedir. 
