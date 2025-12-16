@@ -1,7 +1,7 @@
 ---
 title: 'Kritik Zafiyet Analizi: CVE-2025-55182 (REACT2SHELL)'
 date: 2025-12-09 2:00:00 +0300
-categories: [Kritik Zafiyetler, CVE-2025-55182 (REACT2SHELL)]
+categories: [Kritik Zafiyetler, JavaScript Zafiyetleri]
 tags: [Kritik Zafiyetler, React, CVE-2025-55182, REACT2SHELL]
 author: tamlata
 ---
