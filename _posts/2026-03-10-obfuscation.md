@@ -5,7 +5,7 @@ categories: [Siber Güvenlik Temelleri]
 tags: [Malware, Siber Güvenlik Metodolojisi, MITRE ATT&CK, Siber Güvenlik Temelleri, Obfuscation]
 author: rabiacelikli
 ---
-![Image](/assets/img/2026-03-10/obfuscation_1.png)
+
 
 ## Giriş
 Şimdi şöyle bir senaryonun içine girdiğimizi varsayalım:
@@ -101,8 +101,6 @@ Daha bir çok obfuscation tekniğinden bahsedebiliriz elbet ama hepsi genel olar
 Obfuscation’dan bahsederken iki yüzü olan bir madeni paraya benzetmesi yapmıştık. Data obfuscation’ın ve verinin anonimleştirilmesinin önemini gördük. Ancak bu gizleme teknikleri yalnızca veriyi korumak için mi kullanılır?
 
 Aslında hayır. Aynı teknikler saldırganlar tarafından zararlı yazılımları gizlemek ve güvenlik mekanizmalarından kaçınmak için de kullanılabilir. Hatta bu yaklaşım [MITRE ATT&CK Framework'ünde](https://valientetechnologies.com/blog/posts/mitre-attack/) Defense Evasion taktiği altında "Obfuscated Files or Information" (T1027) tekniği olarak yer almaktadır. Başlıca hedef kötü amaçlı yazılımın davranışını değiştirmeden görünümünü değiştirerek tespit edilmesini önlemeye çalışmaktır. Bu gizlemeyi birden çok şekilde yapabilirler, bu yüzden MITRE ATT&CK içerisinde tam tamına 17 alt teknikle beraber listelenir. 
-
-![Image](/assets/img/2026-03-10/obfuscation_2.png)
 
 Obfuscation tekniklerinin gerçek dünyadaki kullanımına verilebilecek en dikkat çekici örneklerden biri **SolarWinds** saldırısıdır. 2020 yılında ortaya çıkan bu saldırıda, saldırganlar SolarWinds Orion yazılımının güncelleme sürecine zararlı kod enjekte ederek bir supply chain saldırısı gerçekleştirmiştir. Güncelleme paketinin içine gizlenen bu zararlı kod, birçok güvenlik kontrolünden fark edilmeden geçebilmiştir. Zararlı yazılımın analizini zorlaştırmak için çeşitli obfuscation teknikleri kullanılmış ve böylece saldırı aylar boyunca fark edilmeden devam etmiştir.
 
