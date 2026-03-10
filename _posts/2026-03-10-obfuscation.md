@@ -1,11 +1,21 @@
 ---
 title: Obfuscation
+<<<<<<< HEAD
 date: 2026-03-10 20:00:00 +0300
 categories: [Siber Güvenlik Temelleri]
 tags: [Malware, Siber Güvenlik Metodolojisi, MITRE ATT&CK, Siber Güvenlik Temelleri, Obfuscation]
 author: rabiacelikli
 ---
 
+=======
+date: 2026-03-05 20:00:00 +0300
+categories: [Siber Güvenlik Temelleri]
+tags: [Siber Ölüm Zinciri, Sızma Testi, Siber Güvenlik Metodolojisi, MITRE ATT&CK, Siber Güvenlik Temelleri]
+author: rabiacelikli
+---
+
+![Image](/assets/img/2026-03-05/obfuscation_1.png)
+>>>>>>> d691862ee6425a7e25a69685a288a5a04291adf1
 
 ## Giriş
 Şimdi şöyle bir senaryonun içine girdiğimizi varsayalım:
@@ -20,12 +30,21 @@ Gerçek hayatta bu tür senaryolar görece nadir olabilir. Ancak siber güvenlik
 İşte bu noktada karşımıza çıkan kavram: **obfuscation.**
 
 ## Obfuscation
+<<<<<<< HEAD
 Obfuscation, kelime olarak gizleme, örtme, karartma gibi anlamlara sahiptir. Siber güvenlik dünyasında ise bu daha çok bir şeyi anlamayı zorlaştırmak anlamında kullanılır. Obfuscation aslında iki yüzü olan bir madeni paraya benzer çünkü obfuscation sadece malware gizlemeye yaramaz, verileri anonimleştirmek ve daha güvenli şekilde saklamak için de kullanılır. 
 
 ### Data Obfuscation
 Data Obfuscation, Türkçeye çevirmek istersek veri gizleme, veriyi tamamen şifrelemekten farklı olarak, verinin işlevselliğini kısmen koruyarak anlaşılmasını zorlaştırmayı amaçlar. Bu sayede yetkisiz erişim gerçekleşse bile saldırganın elde ettiği veri doğrudan anlamlı olmayabilir. Data obfuscation'a olan ihtiyacı en güzel IBM'in **"Cost of a Data Breach 2025"** raporu gözler önüne seriyor. IBM'e göre 2025'te veri ihlallerinin küresel ortalama maliyeti 4,44 milyon dolara ulaştı ve maliyetin ileriki yıllarda katlanarak artacağı öngörülüyor. 
 
 Öte yandan, **Verizon** tarafından yayımlanan **Data Breach Investigations Report**'a göre saldırıların önemli bir kısmı geçerli kullanıcı hesaplarının kötüye kullanılmasıyla başlamaktadır. Bu durum, saldırganların sistemlere yetkili kullanıcı gibi erişebilmesine olanak tanımaktadır. Böyle bir senaryoda saldırgan sistem içerisindeki veriye erişebilse bile data obfuscation teknikleri sayesinde hassas bilginin doğrudan okunabilir olmaması sağlanabilir.
+=======
+Obfuscation, kelime olarak gizleme, örtme, karartma gibi anlamlara sahiptir (Tureng). Siber güvenlik dünyasında ise bu daha çok bir şeyi anlamayı zorlaştırmak anlamında kullanılır. Obfuscation aslında iki yüzü olan bir madeni paraya benzer çünkü obfuscation sadece malware gizlemeye yaramaz, verileri anonimleştirmek ve daha güvenli şekilde saklamak için de kullanılır. 
+
+## Data Obfuscation
+Data Obfuscation, Türkçeye çevirmek istersek veri gizleme, veriyi tamamen şifrelemekten farklı olarak, verinin işlevselliğini kısmen koruyarak anlaşılmasını zorlaştırmayı amaçlar. Bu sayede yetkisiz erişim gerçekleşse bile saldırganın elde ettiği veri doğrudan anlamlı olmayabilir. Data obfuscation'a olan ihtiyacı en güzel IBM'in "Cost of a Data Breach 2025" raporu gözler önüne seriyor. IBM'e göre 2025'te veri ihlallerinin küresel ortalama maliyeti 4,44 milyon dolara ulaştı ve maliyetin ileriki yıllarda katlanarak artacağı öngörülüyor. 
+
+Öte yandan, Verizon tarafından yayımlanan Data Breach Investigations Report'a göre saldırıların önemli bir kısmı geçerli kullanıcı hesaplarının kötüye kullanılmasıyla başlamaktadır. Bu durum, saldırganların sistemlere yetkili kullanıcı gibi erişebilmesine olanak tanımaktadır. Böyle bir senaryoda saldırgan sistem içerisindeki veriye erişebilse bile data obfuscation teknikleri sayesinde hassas bilginin doğrudan okunabilir olmaması sağlanabilir.
+>>>>>>> d691862ee6425a7e25a69685a288a5a04291adf1
 
 ### Önemli Data Obfuscation Teknikleri
 **Data Masking (Veri Maskeleme):** Veri maskeleme, hassas bilgileri değiştirerek gerçek veriye benzer ancak güvenli bir veri seti oluşturma yöntemidir. Bu süreçte, verinin yapısı ve gerçekçiliği korunurken içerik çeşitli tekniklerle değiştirilir. Maskeleme uygulandıktan sonra ise orijinal verilere, yalnızca maskelenmiş veri üzerinden geri ulaşmak mümkün değildir. İki çeşidi vardır: Statik ve dinamik maskeleme.
@@ -61,7 +80,11 @@ Sonuç:
 **** **** **** 1234
 ```
 
+<<<<<<< HEAD
 **Tokenization (Tokenizasyon):** Tokenizasyon, hassas verilerin gizli olmayan başka verilerle değiştirilmesi yöntemidir. Değiştirilen verilere "token" denilir. Orijinal veri bir token ile değiştirildikten sonra sistem bu veriyi "token vault" denen iyi korunaklı bir sunucuya gönderir, böylece sistemde asıl veri değil token işlem görür. Sadece token vault'a erişim izni olan yetkili kişiler token ve orijinal veri arasındaki bağlantıyı görebilir.
+=======
+**Tokenization (Tokenizasyon):** Tokenizasyon, hassas verileri gizli olmayan başka verilerle değiştirilir. Değiştirilen verilere "token" denilir. Orijinal veri bir token ile değiştirildikten sonra sistem bu veriyi "token vault" denen iyi korunaklı bir sunucuya gönderir, böylece sistemde asıl veri değil token işlem görür. Sadece token vault'a erişim izni olan yetkili kişiler token ve orijinal veri arasındaki bağlantıyı görebilir.
+>>>>>>> d691862ee6425a7e25a69685a288a5a04291adf1
 
 Tokenizasyon özellikle ödeme sistemlerinde yaygın olarak kullanılmaktadır. Herhangi bir alışveriş sitesine kredi kartı bilgilerinizi kaydettiyseniz, mevzubahis site kart bilgilerini değil token'ı saklar.
 
@@ -75,7 +98,11 @@ Kredi Kartı:TKN_91XK27A
 ```
 **Data Encryption (Veri Şifreleme):** Şifrelemenin mutfağında üç ana malzeme vardır: Normal orijinal veri (plaintext), şifreleme algoritması (encryption algorithm) ve anahtar (key). Yani, elinizdeki normal veriyi (plaintext) matematiksel bir algoritma kullanarak okunamaz bir forma (ciphertext) dönüştürme işlemidir ve yalnızca doğru anahtara sahip sistemler tarafından tekrar çözülebilir.  
 
+<<<<<<< HEAD
 Şifreleme sayesinde veriler ister yerel bir sistemde ister bulut ortamında bulunsun güvenli şekilde saklanabilir. Ayrıca verilerin iletilmesi ve işlenmesi sırasında da korunmasını sağlar. Bu nedenle, şifreleme bulut güvenliği çalışmaları ve daha geniş anlamda siber güvenlik stratejileri için kritik önem taşımaktadır. IBM'in "Cost of a Data Breach 2025" raporuna göre , şifreleme kullanan kuruluşlar, veri ihlalinin finansal etkisini 200.000 ABD doların üzerinde azaltabilir. (IBM)
+=======
+Şifreleme sayesinde veriler ister yerel bir sistemde ister bulut ortamında bulunsun güvenli şekilde saklanabilir. Ayrıca verilerin iletilmesi ve işlenmesi sırasında da korunmasını sağlar. Bu nedenle, şifreleme bulut güvenliği çalışmaları ve daha geniş anlamda siber güvenlik stratejileri için kritik önem taşımaktadır. IBM'in "Cost of a Data Breach 2025" raporuna göre , şifreleme kullanan kuruluşlar, veri ihlalinin finansal etkisini 200.000 ABD dolarından fazla azaltabilir. (IBM)
+>>>>>>> d691862ee6425a7e25a69685a288a5a04291adf1
 
 İki ana türü vardır: Simetrik ve asimetrik şifreleme.
 
@@ -97,19 +124,32 @@ U2FsdGVkX1+4sY8jK3vL8pR4...
 
 Daha bir çok obfuscation tekniğinden bahsedebiliriz elbet ama hepsi genel olarak tek bir amaca hizmet ediyor: veriyi anonimleştirmek. Sistemlere yetkisiz erişim gerçekleşse bile, saldırganın eline geçen veri doğrudan okunabilir veya anlamlı değilse bu veri çoğu zaman pratik bir değer taşımaz.
 
+<<<<<<< HEAD
 ### Malware Obfuscation
 Obfuscation’dan bahsederken iki yüzü olan bir madeni paraya benzetmesi yapmıştık. Data obfuscation’ın ve verinin anonimleştirilmesinin önemini gördük. Ancak bu gizleme teknikleri yalnızca veriyi korumak için mi kullanılır?
 
 Aslında hayır. Aynı teknikler saldırganlar tarafından zararlı yazılımları gizlemek ve güvenlik mekanizmalarından kaçınmak için de kullanılabilir. Hatta bu yaklaşım [MITRE ATT&CK Framework'ünde](https://valientetechnologies.com/blog/posts/mitre-attack/) Defense Evasion taktiği altında "Obfuscated Files or Information" (T1027) tekniği olarak yer almaktadır. Başlıca hedef kötü amaçlı yazılımın davranışını değiştirmeden görünümünü değiştirerek tespit edilmesini önlemeye çalışmaktır. Bu gizlemeyi birden çok şekilde yapabilirler, bu yüzden MITRE ATT&CK içerisinde tam tamına 17 alt teknikle beraber listelenir. 
+=======
+## Malware Obfuscation
+Obfuscation’dan bahsederken iki yüzü olan bir madeni paraya benzetmesi yapmıştık. Data obfuscation’ın ve verinin anonimleştirilmesinin önemini gördük. Ancak bu gizleme teknikleri yalnızca veriyi korumak için mi kullanılır?
+
+Aslında hayır. Aynı teknikler saldırganlar tarafından zararlı yazılımları gizlemek ve güvenlik mekanizmalarından kaçınmak için de kullanılabilir. Hatta bu yaklaşım MITRE ATT&CK Framework'ünde Defense Evasion taktiği altında "Obfuscated Files or Information" (T1027) tekniği olarak yer almaktadır. Başlıca hedef kötü amaçlı yazılımın davranışını değiştirmeden görünümünü değiştirerek tespit edilmesini önlemeye çalışmaktır. Bu gizlemeyi birden çok şekilde yapabilirler, bu yüzden MITRE ATT&CK içerisinde tam tamına 17 alt teknikle beraber listelenir. 
+>>>>>>> d691862ee6425a7e25a69685a288a5a04291adf1
 
 Obfuscation tekniklerinin gerçek dünyadaki kullanımına verilebilecek en dikkat çekici örneklerden biri **SolarWinds** saldırısıdır. 2020 yılında ortaya çıkan bu saldırıda, saldırganlar SolarWinds Orion yazılımının güncelleme sürecine zararlı kod enjekte ederek bir supply chain saldırısı gerçekleştirmiştir. Güncelleme paketinin içine gizlenen bu zararlı kod, birçok güvenlik kontrolünden fark edilmeden geçebilmiştir. Zararlı yazılımın analizini zorlaştırmak için çeşitli obfuscation teknikleri kullanılmış ve böylece saldırı aylar boyunca fark edilmeden devam etmiştir.
 
 Şimdi birkaç malware obfuscation yöntemlerine bakalım.
 
 ### Önemli Malware Obfuscation Yöntemleri
+<<<<<<< HEAD
 **Steganography (Steganografi):** Arkadaşınızın gönderdiği e-postaya eklenmiş PNG dosyasını indirirken kaç kere durup düşünürsünüz? Steganografi yüzünden iki kez düşünmenizde fayda var çünkü bu yöntem sayesinde saldırganlar, tespit edilmemek için zararlı yazılımı başka veriler veya nesneler içine saklar. Steganografi; metin, resim, video veya ses içeriği dâhil olmak üzere neredeyse her tür dijital içeriği gizlemek için kullanılabilir. Bu gizli veriler hedefine ulaştıktan sonra çıkarılır. 
 
 Steganografi tekniklerinin gerçek saldırılarda nasıl kullanılabildiğine dair dikkat çekici örneklerden biri 2016 yılında ortaya çıkan **Stegano Exploit Kit** saldırısıdır. Bu saldırıda saldırganlar, popüler web sitelerinde yayınlanan banner reklamlarını kullanarak zararlı kod dağıtmıştır.
+=======
+**Steganography (Steganografi):** Arkadaşınızın gönderdiği maile eklenmiş png dosyasını indirirken kaç kere durup düşünürsünüz? Steganofrafi yüzünden iki kez düşünmenizde fayda var çünkü bu yöntem sayesinde saldırganlar, tespit edilmemek için zararlı yazılımı başka veriler veya nesneler içine saklar. Steganografi; metin, resim, video veya ses içeriği dâhil olmak üzere neredeyse her tür dijital içeriği gizlemek için kullanılabilir. Bu gizli veriler hedefine ulaştıktan sonra çıkarılır. 
+
+Steganografi tekniklerinin gerçek saldırılarda nasıl kullanılabildiğine dair dikkat çekici örneklerden biri 2016 yılında ortaya çıkan Stegano Exploit Kit saldırısıdır. Bu saldırıda saldırganlar, popüler web sitelerinde yayınlanan banner reklamlarını kullanarak zararlı kod dağıtmıştır.
+>>>>>>> d691862ee6425a7e25a69685a288a5a04291adf1
 
 Saldırganlar, JavaScript kodunu reklam görsellerinin pikselleri içerisine gizlemiştir. Kullanıcılar bu reklamların bulunduğu web sayfalarını ziyaret ettiğinde, farkında olmadan zararlı kodu tetikleyen bir süreç başlatılmıştır. Bu süreç sonucunda kullanıcı sistemine ek zararlı yazılımlar indirilebilmiştir.
 
@@ -119,7 +159,11 @@ Bu saldırının etkili olmasının en önemli nedeni, reklamların çok geniş 
 
 Bu işlem sonucunda ortaya çıkan payload genellikle insanlar tarafından okunması oldukça zor bir hale gelir. Kodun işlevi aynı kalırken, analiz yapan güvenlik araştırmacılarının veya otomatik analiz araçlarının kodu anlaması daha fazla zaman ve çaba gerektirir.
 
+<<<<<<< HEAD
 Mesela XSS saldırılarında kullanılan **JSFuck** yöntemi ilginç bir örnektir. JSFuck, JavaScript kodunu yalnızca altı farklı karakter kullanarak yazmaya imkân veren bir obfuscation tekniğidir. Bu karakterler şunlardır:
+=======
+Mesela XSS saldırılarında kullanılan JsFuck yöntemi ilginç bir örnektir. JSFuck, JavaScript kodunu yalnızca altı farklı karakter kullanarak yazmaya imkân veren bir obfuscation tekniğidir. Bu karakterler şunlardır:
+>>>>>>> d691862ee6425a7e25a69685a288a5a04291adf1
 
 
 ```
@@ -142,7 +186,11 @@ Ancak JSFuck kullanıldığında aynı komut çok daha karmaşık ve anlaşılma
 
 Bu tekniğin temel amacı, özellikle imza tabanlı güvenlik sistemlerini zorlaştırmaktır. Birçok antivirüs veya güvenlik aracı zararlı yazılımları tespit ederken dosyaların hash değerlerinden veya belirli byte dizilerinden faydalanır. Ancak bir dosyanın içerisine rastgele veriler eklenirse, dosyanın hash değeri tamamen değişir ve daha önce oluşturulmuş tespit imzaları etkisiz hale gelebilir.
 
+<<<<<<< HEAD
 Binary Padding'in gerçek saldırılarda nasıl kullanıldığına dair örneklerden biri **Emotet malware** zararlı yazılımıdır. Bazı Emotet örneklerinde saldırganlar, dosya boyutunu yapay olarak büyütmek için 00-byte padding tekniğini kullanmıştır. Bu yöntemde zararlı yazılımın içerisine çok sayıda 00 byte eklenerek dosyanın overlay bölümüne gereksiz veri yerleştirilir. Böylece orijinalde yaklaşık **616 KB** olan PE dosyası, padding işlemi sonrası **548 MB** gibi oldukça büyük bir boyuta ulaşabilmektedir.
+=======
+Binary Padding'in gerçek saldırılarda nasıl kullanıldığına dair örneklerden biri Emotet malware zararlı yazılımıdır. Bazı Emotet örneklerinde saldırganlar, dosya boyutunu yapay olarak büyütmek için 00-byte padding tekniğini kullanmıştır. Bu yöntemde zararlı yazılımın içerisine çok sayıda 00 byte eklenerek dosyanın overlay bölümüne gereksiz veri yerleştirilir. Böylece orijinalde yaklaşık 616 KB olan PE dosyası, padding işlemi sonrası 548 MB gibi oldukça büyük bir boyuta ulaşabilmektedir.
+>>>>>>> d691862ee6425a7e25a69685a288a5a04291adf1
 
 
 ## Sonuç
