@@ -1,3 +1,10 @@
+---
+title: Introducing Ghostbadger
+date: 2026-03-05 20:00:00 +0300
+categories: [Araçlarımız]
+tags: [Ghostbadger, Ghostwriter, Vaultwarden, Bitwarden, Pentest Reporting]
+author: otuva
+---
 ![Logo](/assets/img/2026-03-05/ghostbadger.png)
 
 ## The Last Mile
