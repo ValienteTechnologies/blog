@@ -5,6 +5,7 @@ categories: [Siber Güvenlik Temelleri]
 tags: [Siber Güvenlik Temelleri, MITRE ATT&CK]
 author: rabiacelikli
 ---
+
 ![Image](/assets/img/2026-02-20/mitre_attack_1.jpg)
 
 ## Giriş
