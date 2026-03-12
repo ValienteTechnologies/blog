@@ -62,7 +62,7 @@ Sonuç:
 **** **** **** 1234
 ```
 
-**Tokenization (Tokenizasyon):** okenizasyon, hassas verilerin gizli olmayan başka verilerle değiştirilmesi yöntemidir. Değiştirilen verilere "token" denilir. Orijinal veri bir token ile değiştirildikten sonra sistem bu veriyi "token vault" denen iyi korunaklı bir sunucuya gönderir, böylece sistemde asıl veri değil token işlem görür. Sadece token vault'a erişim izni olan yetkili kişiler token ve orijinal veri arasındaki bağlantıyı görebilir.
+**Tokenization (Tokenizasyon):** Tokenizasyon, hassas verilerin gizli olmayan başka verilerle değiştirilmesi yöntemidir. Değiştirilen verilere "token" denilir. Orijinal veri bir token ile değiştirildikten sonra sistem bu veriyi "token vault" denen iyi korunaklı bir sunucuya gönderir, böylece sistemde asıl veri değil token işlem görür. Sadece token vault'a erişim izni olan yetkili kişiler token ve orijinal veri arasındaki bağlantıyı görebilir.
 
 Tokenizasyon özellikle ödeme sistemlerinde yaygın olarak kullanılmaktadır. Herhangi bir alışveriş sitesine kredi kartı bilgilerinizi kaydettiyseniz, mevzubahis site kart bilgilerini değil token'ı saklar.
 
