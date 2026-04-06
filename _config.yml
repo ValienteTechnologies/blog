@@ -2,7 +2,7 @@ theme: jekyll-theme-chirpy
 lang: tr-TR
 timezone: Europe/Istanbul
 title: Valiente Technologies
-tagline: Siber Güvenlik - IT - Cloud 
+tagline: Siber Güvenlik
 description: >- 
   Valiente Technologies siber güvenlik blog sayfası.
 url: https://valientetechnologies.com
@@ -16,8 +16,8 @@ social:
 analytics:
   google:
     id: G-39KGJ5YD68
-avatar: https://valientetechnologies.com/assets/valiente.svg
-social_preview_image: https://valientetechnologies.com/assets/valiente.svg
+avatar: https://valientetechnologies.com/assets/img/valiente/valiente.svg
+social_preview_image: https://valientetechnologies.com/assets/img/valiente/valiente.svg
 toc: true
 pwa:
   enabled: true # The option for PWA feature (installable)
