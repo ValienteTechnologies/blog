@@ -97,14 +97,3 @@ Unutulmamalıdır ki, bir ransomware saldırısının maliyeti yalnızca fidye d
 
 
 
-
-
-
-
-
-
-
-
-
-
-
